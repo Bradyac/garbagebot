@@ -11,7 +11,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 const collectionDates = [
-    { date: "Thu Aug 19 2021", personOnDuty: "Brady" },
+    { date: "Thu Aug 20 2021", personOnDuty: "Brady" },
     { date: "Wed Aug 25 2021", personOnDuty: "Davis" },
     { date: "Thu Sep 02 2021", personOnDuty: "Brady" },
     { date: "Mon Sep 13 2021", personOnDuty: "Davis" },
