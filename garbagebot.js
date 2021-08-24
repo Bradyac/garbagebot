@@ -11,25 +11,27 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 const collectionDates = [
-    { date: "Thu Aug 20 2021", personOnDuty: "Brady" },
+    { date: "Tue Aug 24 2021", personOnDuty: "Brady" },
     { date: "Wed Aug 25 2021", personOnDuty: "Davis" },
     { date: "Thu Sep 02 2021", personOnDuty: "Brady" },
     { date: "Mon Sep 13 2021", personOnDuty: "Davis" },
-    { date: "Tuesday Sep 21 2021", personOnDuty: "Brady" },
+    { date: "Tue Sep 21 2021", personOnDuty: "Brady" },
 ]
 
 const today = new Date().toDateString()
 console.log("Today: " + today)
 
-let message = "Garbage day is tomorrow! "
 let collectionDate = collectionDates.find((collectionDate) => collectionDate.date == today)
 if (collectionDate) {
-    message += collectionDate.personOnDuty + "'s turn to take the bins out - Set your alarm for 6AM 😀 🕕"
-    console.log(message)
+    let message =
+        "Garbage day is tomorrow! " +
+        collectionDate.personOnDuty +
+        "'s turn to take the bins out - Set your alarm for 6AM 😀 🕕"
     client.login(process.env.BOT_TOKEN)
 
     client.on("ready", async () => {
         try {
+            console.log(message)
             await sendMessage(message)
             process.exit(0)
         } catch (error) {
