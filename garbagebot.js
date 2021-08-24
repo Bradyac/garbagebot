@@ -11,7 +11,6 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 const collectionDates = [
-    { date: "Tue Aug 24 2021", personOnDuty: "Brady" },
     { date: "Wed Aug 25 2021", personOnDuty: "Davis" },
     { date: "Thu Sep 02 2021", personOnDuty: "Brady" },
     { date: "Mon Sep 13 2021", personOnDuty: "Davis" },
@@ -45,7 +44,7 @@ if (collectionDate) {
 }
 
 async function sendMessage(message) {
-    const userIDs = [process.env.BRADY_ID] //, process.env.DAVIS_ID
+    const userIDs = [process.env.BRADY_ID, process.env.DAVIS_ID]
     for (let userID of userIDs) {
         const user = await client.users.fetch(userID)
         await user.send(message)
