@@ -12,17 +12,17 @@ const client = new Discord.Client()
 
 const collectionDates = [
     { date: "Wed Sep 29 2021", personOnDuty: "Brady" },
-    { date: "Thu Oct 7 2021", personOnDuty: "Davis" },
+    { date: "Thu Oct 07 2021", personOnDuty: "Davis" },
     { date: "Mon Oct 18 2021", personOnDuty: "Brady" },
     { date: "Tue Oct 26 2021", personOnDuty: "Davis" },
-    { date: "Wed Nov 3 2021", personOnDuty: "Brady" },
-    { date: "Thu Nov 11 2021", personOnDuty: "Davis" },
-    { date: "Sun Nov 21 2021", personOnDuty: "Brady" },
-    { date: "Mon Nov 29 2021", personOnDuty: "Davis" },
-    { date: "Tue Dec 7 2021", personOnDuty: "Brady" },
-    { date: "Wed Dec 15 2021", personOnDuty: "Davis" },
-    { date: "Thu Dec 23 2021", personOnDuty: "Brady" },
-    { date: "Wed Jan 5 2022", personOnDuty: "Davis" },
+    { date: "Wed Nov 03 2021", personOnDuty: "Brady" },
+    { date: "Thu Nov 11 2021", personOnDuty: "Brady" },
+    { date: "Sun Nov 21 2021", personOnDuty: "Davis" },
+    { date: "Mon Nov 29 2021", personOnDuty: "Brady" },
+    { date: "Tue Dec 07 2021", personOnDuty: "Davis" },
+    { date: "Wed Dec 15 2021", personOnDuty: "Brady" },
+    { date: "Thu Dec 23 2021", personOnDuty: "Davis" },
+    { date: "Wed Jan 05 2022", personOnDuty: "Brady" },
 ]
 
 const today = new Date().toDateString()
