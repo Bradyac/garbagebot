@@ -11,18 +11,18 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 const collectionDates = [
-    { date: "Wed Sep 29 2021", personOnDuty: "Brady" },
-    { date: "Thu Oct 07 2021", personOnDuty: "Davis" },
-    { date: "Mon Oct 18 2021", personOnDuty: "Brady" },
-    { date: "Tue Oct 26 2021", personOnDuty: "Davis" },
-    { date: "Wed Nov 03 2021", personOnDuty: "Brady" },
-    { date: "Thu Nov 11 2021", personOnDuty: "Brady" },
-    { date: "Sun Nov 21 2021", personOnDuty: "Davis" },
-    { date: "Mon Nov 29 2021", personOnDuty: "Brady" },
-    { date: "Tue Dec 07 2021", personOnDuty: "Davis" },
-    { date: "Wed Dec 15 2021", personOnDuty: "Brady" },
-    { date: "Thu Dec 23 2021", personOnDuty: "Davis" },
-    { date: "Wed Jan 05 2022", personOnDuty: "Brady" },
+    { date: "Sun Jan 23 2021", personOnDuty: "Davis" },
+    { date: "Mon Jan 31 2021", personOnDuty: "Brady" },
+    { date: "Tue Feb 08 2021", personOnDuty: "Davis" },
+    { date: "Wed Feb 16 2021", personOnDuty: "Brady" },
+    { date: "Sun Feb 27 2021", personOnDuty: "Davis" },
+    { date: "Mon Mar 07 2021", personOnDuty: "Brady" },
+    { date: "Tue Mar 15 2021", personOnDuty: "Davis" },
+    { date: "Wed Mar 23 2021", personOnDuty: "Brady" },
+    { date: "Thu Mar 31 2021", personOnDuty: "Davis" },
+    { date: "Sun Apr 10 2021", personOnDuty: "Davis" },
+    { date: "Wed Apr 20 2021", personOnDuty: "Davis" },
+    { date: "Thu Apr 28 2021", personOnDuty: "Davis" },
 ]
 
 const today = new Date().toDateString()
@@ -30,10 +30,7 @@ console.log("Today: " + today)
 
 let collectionDate = collectionDates.find((collectionDate) => collectionDate.date == today)
 if (collectionDate) {
-    let message =
-        "Garbage day is tomorrow! " +
-        collectionDate.personOnDuty +
-        "'s turn to take the bins out 🗑 - Set your alarm for 6AM 😀 🕕"
+    let message = "Garbage day is tomorrow! " + collectionDate.personOnDuty + "'s turn to take the bins out 🗑 - Set your alarm for 6AM 😀 🕕"
     client.login(process.env.BOT_TOKEN)
 
     client.on("ready", async () => {
