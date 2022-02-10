@@ -11,18 +11,18 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 const collectionDates = [
-    { date: "Sun Jan 23 2021", personOnDuty: "Davis" },
-    { date: "Mon Jan 31 2021", personOnDuty: "Brady" },
-    { date: "Tue Feb 08 2021", personOnDuty: "Davis" },
-    { date: "Wed Feb 16 2021", personOnDuty: "Brady" },
-    { date: "Sun Feb 27 2021", personOnDuty: "Davis" },
-    { date: "Mon Mar 07 2021", personOnDuty: "Brady" },
-    { date: "Tue Mar 15 2021", personOnDuty: "Davis" },
-    { date: "Wed Mar 23 2021", personOnDuty: "Brady" },
-    { date: "Thu Mar 31 2021", personOnDuty: "Davis" },
-    { date: "Sun Apr 10 2021", personOnDuty: "Davis" },
-    { date: "Wed Apr 20 2021", personOnDuty: "Davis" },
-    { date: "Thu Apr 28 2021", personOnDuty: "Davis" },
+    { date: "Sun Jan 23 2022", personOnDuty: "Davis" },
+    { date: "Mon Jan 31 2022", personOnDuty: "Brady" },
+    { date: "Tue Feb 08 2022", personOnDuty: "Davis" },
+    { date: "Wed Feb 16 2022", personOnDuty: "Brady" },
+    { date: "Sun Feb 27 2022", personOnDuty: "Davis" },
+    { date: "Mon Mar 07 2022", personOnDuty: "Brady" },
+    { date: "Tue Mar 15 2022", personOnDuty: "Davis" },
+    { date: "Wed Mar 23 2022", personOnDuty: "Brady" },
+    { date: "Thu Mar 31 2022", personOnDuty: "Davis" },
+    { date: "Sun Apr 10 2022", personOnDuty: "Davis" },
+    { date: "Wed Apr 20 2022", personOnDuty: "Davis" },
+    { date: "Thu Apr 28 2022", personOnDuty: "Davis" },
 ]
 
 const today = new Date().toDateString()
